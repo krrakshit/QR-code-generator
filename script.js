@@ -10,7 +10,7 @@ qrbutton.addEventListener('click',()=>{
         alert('Please Enter a valid URL')
     }
     else{
-        qrimg.src = `https://api.server.com/v1/create-qr-code/?size=150x150&data=${inputvalue}`
+        qrimg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputvalue}`
         qrimg.alt = `QR code for${inputvalue}`
     }
 })
